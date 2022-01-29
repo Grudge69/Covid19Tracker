@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "covid19-tracker"
+  "defaultProject": "covid19-tracker",
+  "cli": {
+    "analytics": false
+  }
 }
