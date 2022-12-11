@@ -19,7 +19,7 @@
 
   <div class="row">
 
-    
+
       <div class="col">
 
           <table class="table">
@@ -32,7 +32,7 @@
               </thead>
 
               <tbody>
-                  <tr *ngFor='let cs of selectedCountryData; index as i '>
+                  <tr *ngFor='let cs of selectedCountryData; index as i;' >
                       <td>{{i+1}}</td>
                       <td>{{cs.date | date}}</td>
                       <td>{{cs.cases}}</td>
@@ -40,7 +40,7 @@
               </tbody>
           </table>
       </div>
-      
+
       <div class="col">
         <google-chart [type]='chart.LineChart' style="width: 100%;" [options]='chart.options' [height]='chart.height' [data]='dataTable'></google-chart>
       </div>
